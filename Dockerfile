@@ -1,6 +1,6 @@
 # https://hub.docker.com/_/eclipse-mosquitto
 
-FROM eclipse-mosquitto:2.0.15
+FROM eclipse-mosquitto:2.0.15-openssl
 
 EXPOSE 1883
 EXPOSE 8883
