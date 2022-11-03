@@ -12,8 +12,8 @@
   cp /src/passwd /mosquitto/config/passwd
 #fi
 
-cat mosquitto.conf
-echo "-----------------"
-cat /mosquitto/config/mosquitto.conf
+cp /src/broker.crt /mosquitto/config/certs/broker.crt
+cp /src/broker.key /mosquitto/config/certs/broker.key
+cp /src/ca.crt /mosquitto/config/ca_certs/ca.crt
 
 exec "$@"

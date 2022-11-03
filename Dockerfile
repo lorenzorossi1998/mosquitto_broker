@@ -9,6 +9,9 @@ WORKDIR /src
 COPY mosquitto.conf .
 COPY passwd .
 COPY entrypoint.sh .
+COPY ca.crt .
+COPY broker.crt .
+COPY broker.key .
 
 USER 1000
 
