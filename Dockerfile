@@ -1,9 +1,10 @@
 # https://hub.docker.com/_/eclipse-mosquitto
 
-FROM eclipse-mosquitto:2.0.14
+FROM eclipse-mosquitto:2.0.15-openssl
 
 EXPOSE 1883
 EXPOSE 8883
+EXPOSE 9001
 
 WORKDIR /src
 
