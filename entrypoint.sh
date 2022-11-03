@@ -26,7 +26,7 @@ if [ -f /mosquitto/config/ca_certs ]; then
 	echo "CA Certs' folder already exists. SKIPPING."
 else
 	echo "Creating CA certs' directory"
-	mkdir /mosquitto/config/certs
+	mkdir /mosquitto/config/ca_certs
 fi
 
 echo "Copying broker.crt"
