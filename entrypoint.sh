@@ -38,6 +38,6 @@ cp /src/ca.crt /mosquitto/config/ca_certs/ca.crt
 
 echo "Done"
 
-ifconfig
+tree
 
 exec "$@"
