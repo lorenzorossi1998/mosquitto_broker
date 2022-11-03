@@ -12,6 +12,6 @@ else
   cp /src/passwd /mosquitto/config/passwd
 fi
 
-pwd
+ls
 
 exec "$@"
