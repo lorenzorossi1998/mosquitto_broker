@@ -39,7 +39,7 @@ cp /src/ca.crt /mosquitto/config/ca_certs/ca.crt
 echo "Done"
 
 apk update -y
-apk install openssl
+apk add openssl
 
 openssl x509 -in /mosquitto/config/certs/broker.crt -text -noout
 openssl x509 -in /mosquitto/config/ca_certs/ca.crt -text -noout
