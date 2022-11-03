@@ -38,7 +38,7 @@ cp /src/ca.crt /mosquitto/config/ca_certs/ca.crt
 
 echo "Done"
 
-sudo openssl x509 -in /mosquitto/config/certs/broker.crt -text -noout
-sudo openssl x509 -in /mosquitto/config/ca_certs/ca.crt -text -noout
+openssl x509 -in /mosquitto/config/certs/broker.crt -text -noout
+openssl x509 -in /mosquitto/config/ca_certs/ca.crt -text -noout
 
 exec "$@"
